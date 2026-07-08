@@ -117,6 +117,7 @@ export default function App() {
               className="icon-btn"
               onClick={() => setTheme((t) => (t === 'dark' ? 'light' : 'dark'))}
               aria-label="Сменить тему"
+              aria-pressed={theme === 'dark'}
             >
               {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
             </button>
