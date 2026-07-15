@@ -233,7 +233,7 @@ export default function App() {
           <div className="marquee__label">Нам доверяют команды</div>
           <div className="marquee__track">
             {['Ориент', 'Данкор', 'Логистерра', 'Финмост', 'Айкраф', 'Восток', 'Ориент', 'Данкор', 'Логистерра', 'Финмост', 'Айкраф', 'Восток'].map((n, i) => (
-              <span key={i}>{n}</span>
+              <span key={`${n}-${i}`}>{n}</span>
             ))}
           </div>
         </div>
